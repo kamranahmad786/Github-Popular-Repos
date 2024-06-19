@@ -1,14 +1,14 @@
 import './index.css'
 
 const RepositoryItem = props => {
-  const {repositoryDetails} = props
+  const {repositoriesDetails} = props
   const {
     name,
     imageUrl,
     starsCount,
     forksCount,
     issuesCount,
-  } = repositoryDetails
+  } = repositoriesDetails
 
   return (
     <li className="repository-item">
