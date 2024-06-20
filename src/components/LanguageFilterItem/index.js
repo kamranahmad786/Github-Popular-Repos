@@ -1,14 +1,14 @@
 import './index.css'
 
-const LangaugeFilterItem = props => {
-  const {isActive, languageFiltersDetails, setActiveLangaugeFilterId} = props
+const LanguageFilterItem = props => {
+  const {isActive, languageFiltersDetails, setActiveLanguageFilterId} = props
   const {id, language} = languageFiltersDetails
   const btnClassName = isActive
     ? 'language-btn active-language-btn'
     : 'langauge-btn'
 
   const onClickLanguageFilter = () => {
-    setActiveLangaugeFilterId(id)
+    setActiveLanguageFilterId(id)
   }
 
   return (
@@ -24,4 +24,4 @@ const LangaugeFilterItem = props => {
   )
 }
 
-export default LangaugeFilterItem
+export default LanguageFilterItem
